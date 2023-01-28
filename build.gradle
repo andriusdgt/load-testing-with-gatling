@@ -11,7 +11,6 @@ repositories {
 }
 
 dependencies {
-    implementation 'io.javalin:javalin:5.3.0'
     implementation 'org.slf4j:slf4j-simple:2.0.3'
 
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'

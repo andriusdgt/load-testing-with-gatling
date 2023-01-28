@@ -1,18 +1,11 @@
-# Gatling json feeder example
-
-## Main module
-Main method has defined a simple http endpoint which just echos whatever json body it receives
-
-* uri: POST localhost:8080/user
-* body (raw json): { "id":"1", "user":"Joe" }
+# Gatling tool example
 
 ## Gatling module
-Defines two simulations
+Our simulation scenario is load testing backend application we developed here:
+https://github.com/andriusdgt/music-album-search-engine
 
-* jsonFeederScenario: Using feeder values we create request body on the fly
-* jsonFeederScenarioWithTemplate: Using feeder values we create body using a template file which looks much more cleaner
+Testing scenario will use artist names listed in csv file to query their top albums across two endpoints
 
 # How to run
 
-* Run main method in main module (starts web server)
 * In a terminal run ``./gradlew gatlingRun``
